@@ -65,11 +65,7 @@ async def eat_done(ctx,foodName = None, calories = None, foodRemains = None):
 
 @client.command()
 async def points(ctx):
-    if points == 0:
-        await ctx.send(f"Your points are **50**");
-        #motivation time
-    else:    
-        await ctx.send(f"Your points are **{totalPoints}");    
+    await ctx.send(f"Your points are **50**");
 
 @client.command()
 async def badges(ctx):
